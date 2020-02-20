@@ -1,0 +1,121 @@
+Besoin du client
+
+Description du projet :
+Site permettant de répertorier et suggérer des lieux de restauration locale, pour des étudiants de Louvain-la-Neuve. Celui-ci serait capable de faire des recherches ciblées en fonction du besoin de l’étudiant (sandwicherie, restaurant,snack,…)
+Il regroupera aussi les avis des utilisateurs, qui permettra de créer des suggestions, ou mettra en valeur certains « menus »
+
+Point important
+•	L’utilisateur a besoin de faire des recherches précises sur les lieux de restauration
+•	L’utilisateur a besoin de faire des recherches sur le type de restauration
+•	Le site a besoin de récupérer des avis d’utilisateurs à propos du lieu en question
+•	Le site a besoin de récupérer des notes à propos des « menu » 
+•	Le site a besoin de pouvoir suggérer les plats 
+•	L’utilisateur a besoin de pouvoir introduire un formulaire de nouvel ajout
+•	L’utilisateur a besoin d’être rassurer par l’allure du site
+
+Point secondaire
+•	Le site a besoin d’avoir la carte des restaurants
+•	L’utilisateur a besoin d’avoir des images de la devanture du lieu de restauration 
+•	L’utilisateur a besoin d’avoir des images de l’intérieur du lieu de restauration
+•	L’utilisateur a besoin de suggestion de menu cibler
+•	L’utilisateur a besoin de pouvoir commenter son expérience à propos du menu
+•	L’utilisateur a besoin de pouvoir commenter son expérience à propos du service
+•	L’utilisateur a besoin de pouvoir commenter son expérience à propos du prix
+
+Point à ne pas faire
+•	Pas de pub
+•	Pas de site trop saccader, besoin de fluidité
+•	Couleur agressive
+ 
+Représentation correspondant au besoin du client 
+ 
+
+	
+ 
+User Story
+
+En tant que client ayant une courte pause je veux une suggestion d’un lieu de restauration rapide afin d’optimiser mon temps de pause
+•	Scénario 1 Le visiteur est récurent
+1.	Étant donné que Le visiteur est récurent
+2.	Et que Le site possède des suggestions
+3.	Et que Le visiteur connaît certains lieux
+4.	Et que Le visiteur cherche où manger un plat en particulier
+5.	Lorsque Le visiteur recherche à manger 
+6.	Alors Le site redirige vers les menus rechercher
+7.	Et que Le menus se voit ajouter +1 a un compteur de visite quotidiens
+
+•	Scénario 2 Le visiteur est nouveau
+1.	Étant donné que Le visiteur est nouveau
+2.	Et que Le visiteur ne connait que peut LLN
+3.	Et que Le visiteur cherche où manger un plat en particulier
+4.	Lorsque Le visiteur le visiteur recherche à manger
+5.	Alors Le site redirige vers les menus rechercher
+6.	Et que Le menus se voit ajouter +1 a un compteur de visite quotidiens
+•	
+
+En tant que client en groupe je veux trouver un lieu de restauration avec une ambiance convivial afin de passer un moment agréable
+•	Scénario 1 le visiteur est nouveau
+1.	Étant donné que le visiteur est nouveau
+2.	Et que Le site possède des suggestions
+3.	Et que Le site à une allure pro
+4.	Lorsque Le visiteur le visiteur visite le site 
+5.	Alors Le visiteur est rassuré et apte à faire plus confiance au site
+
+•	Scénario 2 Le visiteur est récurent
+1.	Étant donné que Le visiteur est nouveau
+2.	Et que Le site possède des suggestions
+3.	Et que Le site à une allure pro
+4.	Lorsque Le visiteur le visiteur recherche à manger
+5.	Alors Le visiteur sait déjà où aller
+6.	Et que Le visiteur soit instinctivement guidé par le site
+
+ 
+En tant que client a une heure tardive je veux voir les lieux de restauration encore ouvert afin savoir ou manger
+•	Scénario 1 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+•	Scénario 2 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+
+
+En tant que client exigent je veux un système de note afin de repérer les lieux a évité
+•	Scénario 1 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+•	Scénario 2 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+ 
+En tant que visiteur récurent du site je veux pouvoir commenter les menus afin de partager mes impressions
+•	Scénario 1 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+•	Scénario 2 X
+1.	Étant donné que X
+2.	Et que Y
+3.	Et que Y
+4.	Lorsque XY
+5.	Alors Z
+
+
