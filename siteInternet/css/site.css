@@ -1,0 +1,24 @@
+div.champTexte {
+    margin: 0 40px 20px 40px;
+    border: 1px solid black;
+    padding: 30px 15px 35px 15px ;
+    background-color: dimgray;
+}
+
+#requete {
+
+}
+
+#bouttonSoumettre {
+
+}
+
+div.affichage {
+    margin: 0 40px 20px 40px;
+    border: 1px solid black;
+    padding: 30px 15px 35px 15px ;
+}
+
+#reponceReq {
+
+}

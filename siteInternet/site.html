@@ -1,0 +1,33 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+	<title>Ventes</title>
+	<link rel="stylesheet" href="css/site.css">
+	<script src="js/site.js"></script>
+</head>
+<body onload="init()">
+	<main>
+		<div class= "champTexte">
+			<!--champ de texte (recup valeur )-->
+			<label for="requete">"Quel est la recherche"</label>
+			<input id="requete" required type="text" size="500">
+
+			<input type="button" id="bouttonSoumettre"  value="Soumettre la requete" onclick="fctRecup()">
+		</div>
+		
+		<div class= "affichage">
+			<!-- un autre champ qui affiche la valeur directement sur la page -->
+			<label for="reponceReq">"Voici les résultats"</label>
+			<input id="reponceReq" required type="text" size="5000" >
+
+		</div>
+		
+	</main>
+</body>
+</html>
