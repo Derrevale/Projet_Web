@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 06 mai 2020 à 12:33
+-- Généré le :  mer. 06 mai 2020 à 14:23
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `restaurant`
+-- Base de données :  `website`
 --
 
 -- --------------------------------------------------------
@@ -77,7 +77,7 @@ INSERT INTO `sites` (`id`, `name`, `url`, `description`, `note`, `cat_id`) VALUE
 (3, 'Otacos', 'https://o-tacos.com/', 'Lieu de restauration basé sur des tacos avec une sauce fromagère.', 2, 1),
 (4, 'Cellule Sush\'', 'http://www.cellulesush.be/', 'Lieu de restauration proposant toute sorte de sushi.', 4, 1),
 (5, 'Loungeatude', 'https://www.loungeatude.be/', 'Lieu de restauration de type gastronomie, tout type de plat.', 5, 2),
-(6, 'B\'Comme', 'https://www.b-comme.be/', 'Restauration hôtelière rapide ou gastronomique ', 4, 8),
+(6, 'B\'Comme', 'https://www.b-comme.be/', '   Restauration hôtelière rapide ou gastronomique ', 5, 8),
 (7, 'Nulle Part Ailleurs\r\n', 'http://www.resto-npa.com/', 'Lieu de restauration classique, tout type de plat.', 4, 8),
 (8, 'Patapouf LLN\r\n', 'https://www.facebook.com/Patapouf.LLN', 'Lieu de restauration italienne.', 4, 8),
 (9, 'Quick', 'https://www.quick.be/fr', 'Fast-food , frite et burger de tout type. ', 2, 1),
@@ -89,6 +89,29 @@ INSERT INTO `sites` (`id`, `name`, `url`, `description`, `note`, `cat_id`) VALUE
 (15, 'La Sandwicherie', 'https://midi.be/', 'Sandwicherie de tout type.', 5, 4),
 (16, 'Brasserie du Parc\r\n', 'http://www.iclub.be/page3.asp?ClubID=89&LG=FR&PageGroupeID=5125', 'Restauration et petit déjeuner', 3, 3),
 (17, 'Onlywood Cafe\r\n', 'https://www.facebook.com/onlywoodlln', 'Brasserie,restauration', 4, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(60) NOT NULL,
+  `last_name` varchar(60) NOT NULL,
+  `login` varchar(60) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `first_name`, `last_name`, `login`, `password`) VALUES
+(1, 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02');
 
 --
 -- Contraintes pour les tables déchargées
