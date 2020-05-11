@@ -1,4 +1,4 @@
-<!-- Wats William -  01/05/2020  10:30 -->
+<!-- Derreumaux Valentin -  01/05/2020  10:30 -->
 <?php
 
 //Query liste déroulante
@@ -19,21 +19,21 @@ $films = $result->fetchAll();
 ?>
 <main class="container">
     <section id="insert">
-        <h2 class="display-4 my-3">Mettre à jour un site</h2>
+        <h2 class="display-4 my-3">Mettre à jour un restaurant</h2>
         <div class="row">
             <div class="col-md-12">
                 <form action="src/updatesite.php" method="post">
                     <?php foreach ($films as $film) : ?>
                     <div class="form-group">
-                        <label for="name">Nom du site</label>
+                        <label for="name">Nom du restaurant</label>
                         <input type="text" id="name" name="name" placeholder="Nom du site" required class="form-control" value="<?= $film->name ?>">
                     </div>
                     <div class="form-group">
-                        <label for="url">URL du site</label>
+                        <label for="url">URL du restaurant</label>
                         <input type="url" id="url" name="url" placeholder="URL du site" required class="form-control" value="<?= $film->url ?>">
                     </div>
                     <div class="form-group">
-                        <label for="category">Catégorie du site</label>
+                        <label for="category">Catégorie du restaurant</label>
                         <select id="category" name="category" required class="form-control">
                             <option value="" disabled selected>Sélectionnez...</option>
                             <?php foreach ($categories as $category) {
