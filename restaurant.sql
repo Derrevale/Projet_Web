@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 06 mai 2020 à 14:23
+-- Généré le :  lun. 11 mai 2020 à 07:39
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -103,6 +103,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `last_name` varchar(60) NOT NULL,
   `login` varchar(60) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `typeofuser` varchar(15) NOT NULL DEFAULT 'user',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
@@ -110,8 +111,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `first_name`, `last_name`, `login`, `password`) VALUES
-(1, 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02');
+INSERT INTO `user` (`id`, `first_name`, `last_name`, `login`, `password`, `typeofuser`) VALUES
+(1, 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02', 'admin');
 
 --
 -- Contraintes pour les tables déchargées
@@ -127,3 +128,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
