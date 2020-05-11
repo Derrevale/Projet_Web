@@ -28,11 +28,11 @@ $websites = $result->fetchAll()
                     <?php foreach ($websites as $website) : ?>
                         <tr>
                             <td><?= $website->name ?></td>
-                            <td><a href="<?= $website->url ?>">Voir le site</a></td>
+                            <td><a href="<?= $website->url ?>">Voir le restaurant</a></td>
                             <td><?= $website->category ?></td>
                             <td><?= stars($website->note) ?></td>
                             <td><a href="?action=updatesite&id=<?= $website->id ?>"><i class="icofont-ui-edit"></i></a></td>
-                            <td><a href="src/delsite.php?id=<?= $website->id ?>" onclick="return confirm('Êtes-vous sur de supprimer ce site?\n Attention c\'est irréversivre')"><i class="icofont-ui-delete"></i></a></td>
+                            <td><a href="src/delsite.php?id=<?= $website->id ?>" onclick="return confirm('Êtes-vous sur de supprimer ce restaurant?\n Attention c\'est irréversivre')"><i class="icofont-ui-delete"></i></a></td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>
