@@ -1,4 +1,4 @@
-<!-- Wats William -  24/04/2020  10:35 -->
+<!-- Derreumaux Valentin -  24/04/2020  10:35 -->
 <?php
 $sql =  "SELECT id, category FROM category ORDER BY category";
 $result = $dbh->prepare($sql);
