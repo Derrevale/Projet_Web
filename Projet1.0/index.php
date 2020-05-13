@@ -37,6 +37,7 @@ $websites = $result->fetchAll()
                             <th>Url</th>
                             <th>Catégorie</th>
                             <th>Note</th>
+                            <th>Commentaire</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -46,6 +47,7 @@ $websites = $result->fetchAll()
                                 <td><a href="<?= $website->url ?>">Voir le site</a></td>
                                 <td><?= $website->category ?></td>
                                 <td><?= stars($website->note) ?></td>
+                                <td><a href="avis.php?search=<?= $website->name ?>">avis d'utilisateur</a></td>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>
