@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 11 mai 2020 à 07:39
+-- Généré le :  mer. 13 mai 2020 à 10:53
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -21,6 +21,33 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `website`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `avis`
+--
+
+DROP TABLE IF EXISTS `avis`;
+CREATE TABLE IF NOT EXISTS `avis` (
+  `ID_avis` int(11) NOT NULL AUTO_INCREMENT,
+  `pseudo_user` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name_rest` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `note` smallint(6) NOT NULL,
+  `avis` text NOT NULL,
+  PRIMARY KEY (`ID_avis`),
+  KEY `ID_rest` (`name_rest`),
+  KEY `lien id-user` (`pseudo_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `avis`
+--
+
+INSERT INTO `avis` (`ID_avis`, `pseudo_user`, `name_rest`, `note`, `avis`) VALUES
+(1, 'ValentinD', 'B\'Comme', 4, 'Très bon'),
+(2, 'Albert2', 'B\'Comme', 2, 'très mauvais acceuil'),
+(3, 'Ch4rle', 'B\'Comme', 5, 'jamais aussi bien manger!');
 
 -- --------------------------------------------------------
 
@@ -58,13 +85,14 @@ INSERT INTO `category` (`id`, `category`) VALUES
 DROP TABLE IF EXISTS `sites`;
 CREATE TABLE IF NOT EXISTS `sites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(120) NOT NULL,
+  `name` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `url` varchar(120) NOT NULL,
   `description` text NOT NULL,
   `note` tinyint(4) NOT NULL,
   `cat_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `cat_id` (`cat_id`)
+  KEY `cat_id` (`cat_id`),
+  KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 
 --
@@ -99,24 +127,35 @@ INSERT INTO `sites` (`id`, `name`, `url`, `description`, `note`, `cat_id`) VALUE
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `typeOfUser` varchar(5) NOT NULL DEFAULT 'user',
+  `pseudo` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `first_name` varchar(60) NOT NULL,
   `last_name` varchar(60) NOT NULL,
   `login` varchar(60) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `typeofuser` varchar(15) NOT NULL DEFAULT 'user',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `pseudo` (`pseudo`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `first_name`, `last_name`, `login`, `password`, `typeofuser`) VALUES
-(1, 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02', 'admin');
+INSERT INTO `user` (`id`, `typeOfUser`, `pseudo`, `first_name`, `last_name`, `login`, `password`) VALUES
+(1, 'admin', 'ValentinD', 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02'),
+(3, 'user', 'Albert2', 'Albert', 'Hackerman', 'Albert2.Hack', 'password'),
+(4, 'user', 'Ch4rle', 'Charle', 'Henrion', 'CharleHenrion', 'motdepasse');
 
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `avis`
+--
+ALTER TABLE `avis`
+  ADD CONSTRAINT `lien id-rest` FOREIGN KEY (`name_rest`) REFERENCES `sites` (`name`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `lien id-user` FOREIGN KEY (`pseudo_user`) REFERENCES `user` (`pseudo`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Contraintes pour la table `sites`
@@ -128,4 +167,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
