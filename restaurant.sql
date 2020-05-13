@@ -47,7 +47,27 @@ CREATE TABLE IF NOT EXISTS `avis` (
 INSERT INTO `avis` (`ID_avis`, `pseudo_user`, `name_rest`, `note`, `avis`) VALUES
 (1, 'ValentinD', 'B\'Comme', 4, 'Très bon'),
 (2, 'Albert2', 'B\'Comme', 2, 'très mauvais acceuil'),
-(3, 'Ch4rle', 'B\'Comme', 5, 'jamais aussi bien manger!');
+(3, 'Ch4rle', 'B\'Comme', 3, 'jamais aussi bien manger!'),
+(4, 'ValentinD', 'Mex&Go', 5, 'service trop lent'),
+(5, 'Ch4rle', 'Mex&Go', 4, 'jamais aussi bien manger!'),
+(6, 'Albert2', 'Otacos', 3, 'je m\'attendais a mieux'),
+(7, 'ValentinD', ' Cellule Sush\'', 4, 'Délicieux !'),
+(8, 'Ch4rle', 'Loungeatude', 5, 'jamais aussi bien manger!'),
+(9, 'ValentinD', 'Chick \'N\' Fish', 3, 'jamais aussi bien manger!'),
+(10, 'Ch4rle', 'Nulle Part Ailleurs\r\n', 4, 'Super restaurent'),
+(11, 'Albert2', 'Patapouf LLN\r\n', 5, 'Très bon'),
+(12, 'ValentinD', 'Onlywood Cafe\r\n', 4, 'Toujours aussi bon !'),
+(13, 'Ch4rle', 'Quick', 3, 'rapide et efficace'),
+(14, 'Albert2', 'EXKi', 2, 'pas terrible'),
+(15, 'ValentinD', 'La Crêperie Bretonne', 3, 'jamais aussi bien manger!'),
+(16, 'ValentinD', 'Burgerking', 5, 'jamais aussi bien manger!'),
+(17, 'Ch4rle', 'La Sandwicherie', 4, 'Les meilleur sandwich de LLN'),
+(18, 'ValentinD', 'La Récré', 5, 'Meilleur acceuil que \"La Sandwicherie\"'),
+(19, 'Albert2', 'Blomi\r\n', 4, 'jamais aussi bien manger!'),
+(20, 'Ch4rle', 'Brasserie du Parc\r\n', 3, 'Super brasserie'),
+(21, 'Albert2', 'Brasserie du Parc\r\n', 2, 'jamais aussi bien manger!'),
+(22, 'ValentinD', 'Brasserie du Parc\r\n', 1, 'Je n\'irais plus jamais '),
+(23, 'ValentinD', 'Patapouf LLN\r\n', 4, 'Je n\'irais plus jamais ');
 
 -- --------------------------------------------------------
 
