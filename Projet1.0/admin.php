@@ -1,6 +1,6 @@
 <?php
 /*possibiliter de modifier la db directement depuis le site en tant que admin
-(objectif lors de la connection si admin dirrection vers celui si et non le user classique
+(objectif lors de la connection si admin direction vers celui si et non le user classique
 */
 require 'partials/header_admin.php';
 require 'src/DB.php';

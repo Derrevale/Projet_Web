@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,21 @@
 <main class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h3 class="my-3">Sign in.</h3>
+            <h3 class="my-3">Connection</h3>
             <form action="src/login.php" method="post">
                 <div class="form-group">
-                    <label for="login">Login</label>
+                    <label for="login">Connection</label>
                     <input type="text" id="login" name="login" required class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">Mot de passe</label>
                     <input type="password" id="password" name="password" required class="form-control">
                 </div>
-                <button class="btn btn-primary form-control" type="submit">Connect</button>
+                <button class="btn btn-primary form-control" type="submit" >Connection</button>
+
+
             </form>
+
         </div>
     </div>
 </main>
