@@ -1,0 +1,20 @@
+.card h1{
+    color:red;
+}
+
+.card h3{
+    color:red;
+}
+
+a:hover{
+    color:red;
+}
+
+h5 a{
+    color:#000080;
+    font-weight:bold;
+}
+
+.card{
+    margin-bottom:20px;
+}
