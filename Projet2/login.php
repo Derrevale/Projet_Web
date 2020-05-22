@@ -1,4 +1,8 @@
-
+<?php
+require 'partials/header.php';
+require 'src/DB.php';
+require 'src/tools.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,3 +46,7 @@
 </main>
 </body>
 </html>
+
+<?php
+require 'partials/footer.php';
+?>
