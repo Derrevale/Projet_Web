@@ -23,7 +23,7 @@ else {
 $result->execute();
 $websites = $result->fetchAll()
 ?>
-    <link href="css/ahover.css" rel="stylesheet">
+    <link href="css/cssglobal.css" rel="stylesheet">
 
     <main class="container">
         <section id="listing">
@@ -40,9 +40,10 @@ $websites = $result->fetchAll()
                             <h3><?= $website->category ?></h3><br>
                             <h4><?= stars($website->note) ?></h4>
                             <h5><a href="avis.php?search=<?= $website->name ?>">avis d'utilisateur</a></h5>
-                            <h5><a href="<?= $website->url ?>">Voir le site</a></h5><br><br>
+                            <h5><a href="<?= $website->url ?>">Voir le site</a></h5>
                         </div>
                     </div>
+
 
 
                 <?php endforeach; ?>
@@ -66,5 +67,4 @@ $websites = $result->fetchAll()
         </section>
     </main>
 
-<?php
-require 'partials/footer.php'; ?>
+
