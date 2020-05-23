@@ -8,9 +8,7 @@
     <!--    CSS-->
     <link rel="stylesheet" href="css/icofont.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/ahover.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
 </head>
 <body>
 <header>
@@ -30,7 +28,7 @@
                     <a class="nav-link" href="login.php">Connection</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" action="?" method="get">
