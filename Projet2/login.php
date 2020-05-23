@@ -11,7 +11,7 @@ require 'src/tools.php';
     <title>Login</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/enreg.css">
+    <link rel="stylesheet" href="css/cssglobal.css">
 </head>
 <body>
 <main class="container">
@@ -20,7 +20,7 @@ require 'src/tools.php';
             <h3 align="center" class="my-3">Connection</h3>
             <form action="src/login.php" method="post">
                 <div class="form-group">
-                    <label for="login">Connection</label>
+                    <label for="login">Identifiant</label>
                     <input type="text" id="login" name="login" required class="form-control">
                 </div>
                 <div class="form-group">
