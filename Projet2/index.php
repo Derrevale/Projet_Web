@@ -26,6 +26,11 @@ $websites = $result->fetchAll()
     <link href="css/cssglobal.css" rel="stylesheet">
 
     <main class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <h1 id="nom">Resto-rank</h1>
+            </div>
+        </div>
         <section id="listing">
             <h3 class="display-4 my-3">Liste des Restaurants</h3>
 
@@ -48,23 +53,11 @@ $websites = $result->fetchAll()
 
                 <?php endforeach; ?>
             </div>
-            <div class="bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item"><a href="#">À propos</a></li>
-                                <li class="list-inline-item">&middot;</li>
-                                <li class="list-inline-item"><a href="#">Vie privée</a></li>
-                                <li class="list-inline-item">&middot;</li>
-                                <li class="list-inline-item"><a href="#">Conditions d'utilisations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </section>
     </main>
+<?php
+require 'partials/footer.php';
+?>
 
 
