@@ -28,7 +28,7 @@ require 'src/tools.php';
                 <img class="card-img-top" src="image/mail.jpg" alt="mail" >
                 <div class="card-body">
                     <h4 class="card-title"> Email </h4>
-                    <p class="card-text"> Contactez nous via : eaten@gmail.com</p>
+                    <p class="card-text"> Contactez nous via : resto-rank@gmail.com</p>
                 </div>
             </div>
         </div>
