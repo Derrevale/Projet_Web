@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 13 mai 2020 à 10:53
+-- Généré le :  sam. 23 mai 2020 à 15:50
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
 
@@ -39,35 +39,6 @@ CREATE TABLE IF NOT EXISTS `avis` (
   KEY `ID_rest` (`name_rest`),
   KEY `lien id-user` (`pseudo_user`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `avis`
---
-
-INSERT INTO `avis` (`ID_avis`, `pseudo_user`, `name_rest`, `note`, `avis`) VALUES
-(1, 'ValentinD', 'B\'Comme', 4, 'Très bon'),
-(2, 'Albert2', 'B\'Comme', 2, 'très mauvais acceuil'),
-(3, 'Ch4rle', 'B\'Comme', 3, 'jamais aussi bien manger!'),
-(4, 'ValentinD', 'Mex&Go', 5, 'service trop lent'),
-(5, 'Ch4rle', 'Mex&Go', 4, 'jamais aussi bien manger!'),
-(6, 'Albert2', 'Otacos', 3, 'je m\'attendais a mieux'),
-(7, 'ValentinD', ' Cellule Sush\'', 4, 'Délicieux !'),
-(8, 'Ch4rle', 'Loungeatude', 5, 'jamais aussi bien manger!'),
-(9, 'ValentinD', 'Chick \'N\' Fish', 3, 'jamais aussi bien manger!'),
-(10, 'Ch4rle', 'Nulle Part Ailleurs\r\n', 4, 'Super restaurent'),
-(11, 'Albert2', 'Patapouf LLN\r\n', 5, 'Très bon'),
-(12, 'ValentinD', 'Onlywood Cafe\r\n', 4, 'Toujours aussi bon !'),
-(13, 'Ch4rle', 'Quick', 3, 'rapide et efficace'),
-(14, 'Albert2', 'EXKi', 2, 'pas terrible'),
-(15, 'ValentinD', 'La Crêperie Bretonne', 3, 'jamais aussi bien manger!'),
-(16, 'ValentinD', 'Burgerking', 5, 'jamais aussi bien manger!'),
-(17, 'Ch4rle', 'La Sandwicherie', 4, 'Les meilleur sandwich de LLN'),
-(18, 'ValentinD', 'La Récré', 5, 'Meilleur acceuil que \"La Sandwicherie\"'),
-(19, 'Albert2', 'Blomi\r\n', 4, 'jamais aussi bien manger!'),
-(20, 'Ch4rle', 'Brasserie du Parc\r\n', 3, 'Super brasserie'),
-(21, 'Albert2', 'Brasserie du Parc\r\n', 2, 'jamais aussi bien manger!'),
-(22, 'ValentinD', 'Brasserie du Parc\r\n', 1, 'Je n\'irais plus jamais '),
-(23, 'ValentinD', 'Patapouf LLN\r\n', 4, 'Je n\'irais plus jamais ');
 
 -- --------------------------------------------------------
 
@@ -113,30 +84,20 @@ CREATE TABLE IF NOT EXISTS `sites` (
   PRIMARY KEY (`id`),
   KEY `cat_id` (`cat_id`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `sites`
 --
 
 INSERT INTO `sites` (`id`, `name`, `url`, `description`, `note`, `cat_id`) VALUES
-(1, 'Chick \'N\' Fish', 'https://www.facebook.com/ChickNFishLLN/', 'Lieu de restauration rapide principalement basé sur le poulet.', 4, 1),
 (2, 'Mex&Go', 'https://www.mexngo.com/', 'Lieu de restauration basé sur des tacos.', 5, 1),
 (3, 'Otacos', 'https://o-tacos.com/', 'Lieu de restauration basé sur des tacos avec une sauce fromagère.', 2, 1),
-(4, 'Cellule Sush\'', 'http://www.cellulesush.be/', 'Lieu de restauration proposant toute sorte de sushi.', 4, 1),
 (5, 'Loungeatude', 'https://www.loungeatude.be/', 'Lieu de restauration de type gastronomie, tout type de plat.', 5, 2),
-(6, 'B\'Comme', 'https://www.b-comme.be/', '   Restauration hôtelière rapide ou gastronomique ', 5, 8),
-(7, 'Nulle Part Ailleurs\r\n', 'http://www.resto-npa.com/', 'Lieu de restauration classique, tout type de plat.', 4, 8),
-(8, 'Patapouf LLN\r\n', 'https://www.facebook.com/Patapouf.LLN', 'Lieu de restauration italienne.', 4, 8),
-(9, 'Quick', 'https://www.quick.be/fr', 'Fast-food , frite et burger de tout type. ', 2, 1),
-(10, 'La Crêperie Bretonne', 'http://www.lacreperiebretonne.be/', 'Lieu de restauration de dessert diverse, Crêpes comprisent.', 4, 6),
-(11, 'Blomi\r\n', 'https://novotelwavre.be/eat-blomi/', 'Lieu de restauration basé sur la gastronomie.', 4, 2),
 (12, 'EXKi', 'https://www.exki.com/en/restaurants/exki-louvain-la-neuve', 'Lieu de restauration basé sur le commerce équitable.', 4, 7),
-(13, 'Burgerking', 'https://www.burgerking.be/fr', 'Fast-food ,burger en tout type.', 2, 1),
 (14, 'La Récré', 'https://www.facebook.com/larecre.be/', 'Sandwicherie de tout type.', 4, 4),
 (15, 'La Sandwicherie', 'https://midi.be/', 'Sandwicherie de tout type.', 5, 4),
-(16, 'Brasserie du Parc\r\n', 'http://www.iclub.be/page3.asp?ClubID=89&LG=FR&PageGroupeID=5125', 'Restauration et petit déjeuner', 3, 3),
-(17, 'Onlywood Cafe\r\n', 'https://www.facebook.com/onlywoodlln', 'Brasserie,restauration', 4, 5);
+(32, 'Zanzibar', 'https://zanzibarlln.be/', 'Énorme choix de burger', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -155,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `pseudo` (`pseudo`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
@@ -164,7 +125,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`id`, `typeOfUser`, `pseudo`, `first_name`, `last_name`, `login`, `password`) VALUES
 (1, 'admin', 'ValentinD', 'Valentin', 'Derreumaux', 'V.derreumaux', 'moimoimoi02'),
 (3, 'user', 'Albert2', 'Albert', 'Hackerman', 'Albert2.Hack', 'password'),
-(4, 'user', 'Ch4rle', 'Charle', 'Henrion', 'CharleHenrion', 'motdepasse');
+(4, 'user', 'Ch4rle', 'Charle', 'Henrion', 'CharleHenrion', 'motdepasse'),
+(6, 'user', 'Poums', 'Florian', 'Degives', '0', '6'),
+(7, 'user', 'Poumsii', 'Javier', 'Paolo', '0', '84'),
+(8, 'user', 'Couqdqd', 'Mouloud', 'Abibi', 'AlbertLIj', '6e84d8');
 
 --
 -- Contraintes pour les tables déchargées
