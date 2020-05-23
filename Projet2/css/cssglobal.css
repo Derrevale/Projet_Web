@@ -18,3 +18,12 @@ h5 a{
 .card{
     margin-bottom:20px;
 }
+
+body{
+    background-color: #F5F5DC;
+    height:100%;
+}
+
+#footer{
+    background-color: #F5F5DC;
+}
