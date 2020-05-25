@@ -22,7 +22,7 @@ $films = $result->fetchAll();
         <h2 class="display-4 my-3">Mettre à jour un restaurant</h2>
         <div class="row">
             <div class="col-md-12">
-                <form action="src/updatesite.php" method="post">
+                <form action="tools/updatesite.php" method="post">
                     <?php foreach ($films as $film) : ?>
                     <div class="form-group">
                         <label for="name">Nom du restaurant</label>
