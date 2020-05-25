@@ -1,7 +1,7 @@
 <?php
 require 'partials/header.php';
-require 'src/DB.php';
-require 'src/tools.php';
+require 'tools/DB.php';
+require 'tools/tools.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@ require 'src/tools.php';
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <h3 align="center" class="my-3">Connection</h3>
-            <form action="src/login.php" method="post">
+            <form action="tools/login.php" method="post">
                 <div class="form-group">
                     <label for="login">Identifiant</label>
                     <input type="text" id="login" name="login" required class="form-control">

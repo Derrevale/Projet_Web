@@ -3,8 +3,8 @@
 (objectif lors de la connection si admin direction vers celui si et non le user classique
 */
 require 'partials/header_admin.php';
-require 'src/DB.php';
-require 'src/tools.php';
+require 'tools/DB.php';
+require 'tools/tools.php';
 $dbh = connect();
 if (isset($_GET['action'])){
     if ($_GET['action'] === 'enregistrement') {
@@ -18,6 +18,3 @@ if (isset($_GET['action'])){
 
 require 'partials/footer.php';
 ?>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link href="css/cssglobal.css" rel="stylesheet">
