@@ -4,9 +4,9 @@
 //connection a la db "website"
 function connect() : object
 {
-    $dns = 'mysql:dbname=website; host=localhost; charset=utf8';
+    $dns = 'mysql:dbname=website; host=51.178.41.186; charset=utf8';
     $user = 'root';
-    $password = '';
+    $password = 'ephec';
     $options = [ // remplace le setAttribute
             PDO::ATTR_ERRMODE => PDO:: ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
