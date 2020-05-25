@@ -32,7 +32,7 @@ $websites = $result->fetchAll()
                             <td><?= $website->category ?></td>
                             <td><?= stars($website->note) ?></td>
                             <td><a href="?action=updatesite&id=<?= $website->id ?>"><i class="icofont-ui-edit"></i></a></td>
-                            <td><a href="src/delsite.php?id=<?= $website->id ?>" onclick="return confirm('Êtes-vous sur de supprimer ce site?\n Attention c\'est irréversivre')"><i class="icofont-ui-delete"></i></a></td>
+                            <td><a href="tools/delsite.php?id=<?= $website->id ?>" onclick="return confirm('Êtes-vous sur de supprimer ce site?\n Attention c\'est irréversivre')"><i class="icofont-ui-delete"></i></a></td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>
