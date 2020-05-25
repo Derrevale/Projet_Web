@@ -7,13 +7,13 @@ $name = $result->fetchAll();
 ?>
 <main class="container">
     <section id="insert">
-        <h2 class="display-4 my-3">Insertion d'un avis</h2>
+        <h2 class="display-4 my-3">Insertion d'un avis </h2>
         <div class="row">
             <div class="col-md-12">
-                <form action="src/insertavis.php" method="post">
+                <form action="tools/insertavis.php" method="post">
                     <div class="form-group">
-                        <label for="pseudo">Nom du restaurant</label>
-                        <input type="text" id="pseudo" name="pseudo" placeholder="pseudo de l'utilisateur" required class="form-control">
+                        <label for="pseudo">Utilisateur</label>
+                        <input type="text" id="pseudo" name="pseudo"  readonly value="<?= $_SESSION['login'] ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">Nom du restaurant</label>
