@@ -12,7 +12,7 @@ $categories = $result->fetchAll();
         <h2 class="display-4 my-3">Nouvel utilisateur</h2>
         <div class="row">
             <div class="col-md-12">
-                <form action="src/enregistrement.php" method="post">
+                <form action="tools/enregistrement.php" method="post">
                     <div class="form-group">
                         <label for="login">Identifiant de connection</label>
                         <input id="login" name="login" placeholder="Entrez votre identifiant de connection" required class="form-control">
@@ -24,7 +24,7 @@ $categories = $result->fetchAll();
                     </div>
                     <div class="form-group">
                         <label for="nom">Nom de famille</label>
-                        <input id="name" name="nom" placeholder="Entrez votre nom de famille" required class="form-control">
+                        <input id="nom" name="nom" placeholder="Entrez votre nom de famille" required class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="pseudo">Votre pseudo</label>
