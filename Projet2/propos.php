@@ -11,10 +11,7 @@ require 'src/tools.php';
 <head>
     <title>A propos</title>
 </head>
-<div>
-    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
-    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
-</div>
+
 <body>
     <div id="prop">
         <h3 class="titregras"> A propos </h3>
