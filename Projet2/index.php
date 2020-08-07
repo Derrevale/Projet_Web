@@ -24,10 +24,7 @@ $result->execute();
 $websites = $result->fetchAll()
 ?>
     <script type="text/javascript" src="js/fonctions.js"></script>
-<div>
-    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
-    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
-</div>
+
     <link href="css/cssglobal.css" rel="stylesheet">
 
     <main class="container">
