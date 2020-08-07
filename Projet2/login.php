@@ -1,7 +1,7 @@
 <?php
 require 'partials/header.php';
-require 'tools/DB.php';
-require 'tools/tools.php';
+require 'src/DB.php';
+require 'src/tools.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,13 +12,18 @@ require 'tools/tools.php';
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cssglobal.css">
+    <script type="text/javascript" src="js/fonctions.js"></script>
 </head>
+<div>
+    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
+    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
+</div>
 <body>
 <main class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <h3 align="center" class="my-3">Connection</h3>
-            <form action="tools/login.php" method="post">
+            <form action="src/login.php" method="post">
                 <div class="form-group">
                     <label for="login">Identifiant</label>
                     <input type="text" id="login" name="login" required class="form-control">
@@ -36,7 +41,7 @@ require 'tools/tools.php';
     </div>
     <div class="col-md-6 offset-md-3">
         <h3 align="center" class="my-3">Inscription</h3>
-        <form action="/web/enregistrement.php?action=enregistrement" method="post">
+        <form action="/enregistrement.php?action=enregistrement" method="post">
             <button class="btn btn-primary form-control" type="submit" >Enregistrez-vous</button>
 
 
