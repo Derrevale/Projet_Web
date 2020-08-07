@@ -1,7 +1,4 @@
-<div>
-    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
-    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
-</div>
+
 <?php
 /*possibiliter de modifier la db directement depuis le site en tant que admin
 (objectif lors de la connection si admin direction vers celui si et non le user classique
