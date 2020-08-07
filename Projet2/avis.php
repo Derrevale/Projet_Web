@@ -24,10 +24,7 @@ $result->execute();
 $websites = $result->fetchAll()
 ?>
     <script type="text/javascript" src="js/fonctions.js"></script>
-    <div>
-        <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
-        <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
-    </div>
+   
     <main class="container">
         <section id="listing">
             <h3 class="display-4 my-3">Avis des utilisateurs</h3>
