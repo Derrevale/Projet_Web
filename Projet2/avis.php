@@ -1,8 +1,8 @@
 <?php
 //Page principale , acces utilisateur normaux si connection effective
-require 'partials/header.php';
-require 'tools/DB.php';
-require 'tools/tools.php';
+require 'partials/header_avis.php';
+require 'src/DB.php';
+require 'src/tools.php';
 $dbh = connect();
 if (!isset($_GET['search'])) {
     $sql = "SELECT s.ID_avis, s.name_rest,s.avis, s.note,s.pseudo_user
@@ -23,6 +23,11 @@ else {
 $result->execute();
 $websites = $result->fetchAll()
 ?>
+    <script type="text/javascript" src="js/fonctions.js"></script>
+    <div>
+        <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
+        <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
+    </div>
     <main class="container">
         <section id="listing">
             <h3 class="display-4 my-3">Avis des utilisateurs</h3>
