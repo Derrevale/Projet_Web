@@ -1,8 +1,8 @@
 <?php
 //Page principale , acces utilisateur normaux si connection effective
 require 'partials/header.php';
-require 'tools/DB.php';
-require 'tools/tools.php';
+require 'src/DB.php';
+require 'src/tools.php';
 $dbh = connect();
 if (!isset($_GET['search'])) {
     $sql = "SELECT s.id, s.name,s.url, s.note, c.category
@@ -23,16 +23,23 @@ else {
 $result->execute();
 $websites = $result->fetchAll()
 ?>
+    <script type="text/javascript" src="js/fonctions.js"></script>
+<div>
+    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
+    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
+</div>
     <link href="css/cssglobal.css" rel="stylesheet">
 
     <main class="container">
+
         <div class="row">
             <div class="col-12 col-lg-4">
-                <h1 id="nom">Resto-rank</h1>
+                <p id="nom">Resto-rank</p>
+
             </div>
         </div>
         <section id="listing">
-            <h3 class="display-4 my-3">Liste des Restaurants</h3>
+            <h3 id="lisres" class="display-4 my-3">Liste des Restaurants</h3>
 
             <div class="row">
 
@@ -41,8 +48,8 @@ $websites = $result->fetchAll()
                     <div class="col-12 col-lg-4">
                         <div class="card" style="background-image: url('image/<?= $website->name ?>.jpg')">
 
-                            <h1><?= $website->name ?></h1>
-                            <h3><?= $website->category ?></h3><br>
+                            <h1 class='resto'><?= $website->name ?></h1>
+                            <h3 class='type'><?= $website->category ?></h3><br>
                             <h4><?= stars($website->note) ?></h4>
                             <h5><a href="avis.php?search=<?= $website->name ?>">avis d'utilisateur</a></h5>
                             <h5><a href="<?= $website->url ?>">Voir le site</a></h5>
