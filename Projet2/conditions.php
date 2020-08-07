@@ -12,10 +12,6 @@ require 'src/tools.php';
     <title> Conditions </title>
 </head>
 <body>
-<div>
-    <button  id="sombre"  onclick="modeNuit('dimgray')"> Mode Nuit </button>
-    <button id="jour" onclick="modeJour('blanchedalmond')"> Mode Jour </button>
-</div>
     <div id="cond">
         <h3 class="titregras"> Conditions d'utilisation </h3>
         <p>En naviguant sur notre site, l’internaute reconnaît avoir pris connaissance et accepté nos conditions générales d’utilisation</p>
