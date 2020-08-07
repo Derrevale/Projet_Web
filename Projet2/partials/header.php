@@ -31,6 +31,15 @@
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
             </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="clair" onclick="modeJour('blanchedalmond')"> Mode Jour </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  id="nuit"  onclick="modeNuit('dimgray')"> Mode Nuit </a>
+                </li>
+            </ul>
+
             <form class="form-inline my-2 my-lg-0" action="?" method="get">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" <?php if (isset($_GET['search'])) echo  'value='.$_GET['search'] ?> >
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
