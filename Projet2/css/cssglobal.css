@@ -1,13 +1,13 @@
 .card h1{
-    color:red;
+    color:#EC7063;
 }
 
 .card h3{
-    color:red;
+    color:#EC7063;
 }
 
 a:hover{
-    color:red;
+    color:#EC7063;
 }
 
 h5 a{
@@ -17,10 +17,15 @@ h5 a{
 
 .card{
     margin-bottom:20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 5%;
 }
 
 body{
-    background-color: #F5F5DC;
+    background-color: antiquewhite;
     height:100%;
 }
 
@@ -40,3 +45,18 @@ body{
     font-weight: bold;
     margin-bottom:35px;
 }
+
+h3 #lisres.display-4.my-3{
+    margin-bottom: 10px;
+}
+
+
+#listing .card:hover{
+    -webkit-transform: scale(1.4) rotate(360deg);
+    transform:scale(1.4) rotate(360deg);
+    background-repeat: no-repeat;
+    position: center;
+    z-index: 1;
+
+}
+
