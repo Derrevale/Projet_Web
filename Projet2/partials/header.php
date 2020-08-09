@@ -33,10 +33,10 @@
             </ul>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" id="clair" onclick="modeJour('blanchedalmond')"> Mode Jour </a>
+                    <a class="nav-link" id="clair" onclick="modeJour('antiquewhite')"> Mode Jour </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  id="nuit"  onclick="modeNuit('dimgray')"> Mode Nuit </a>
+                    <a class="nav-link"  id="nuit"  onclick="modeNuit('#474747')"> Mode Nuit </a>
                 </li>
             </ul>
 
