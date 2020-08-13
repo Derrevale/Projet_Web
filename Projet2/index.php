@@ -1,8 +1,8 @@
 <?php
 //Page principale , acces utilisateur normaux si connection effective
 require 'partials/header.php';
-require 'src/DB.php';
-require 'src/tools.php';
+require 'tools/DB.php';
+require 'tools/tools.php';
 $dbh = connect();
 if (!isset($_GET['search'])) {
     $sql = "SELECT s.id, s.name,s.url, s.note, c.category

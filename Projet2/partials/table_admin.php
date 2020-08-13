@@ -20,8 +20,9 @@ $websites = $result->fetchAll()
                         <th>Url</th>
                         <th>Catégorie</th>
                         <th>Note</th>
-                        <th><i class="icofont-ui-edit"></i></th>
-                        <th><i class="icofont-ui-delete"></i></th>
+                        <th>Modif</i></th>
+                        <th>Supp avis</th>
+                        <th>Supp site</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -32,7 +33,9 @@ $websites = $result->fetchAll()
                             <td><?= $website->category ?></td>
                             <td><?= stars($website->note) ?></td>
                             <td><a href="?action=updatesite&id=<?= $website->id ?>"><i class="icofont-ui-edit"></i></a></td>
+                            <td><a href="tools/delavis.php?nameR=<?= $website->name ?>" onclick="return confirm('Êtes-vous sur de supprimer les avis de ce site?\n Attention c\'est irréversivre')"><i class="icofont-mop"></i></a></td>
                             <td><a href="tools/delsite.php?id=<?= $website->id ?>" onclick="return confirm('Êtes-vous sur de supprimer ce site?\n Attention c\'est irréversivre')"><i class="icofont-ui-delete"></i></a></td>
+
                         </tr>
                     <?php endforeach; ?>
                     </tbody>
