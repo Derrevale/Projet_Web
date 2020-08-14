@@ -5,8 +5,8 @@
 function connect() : object
 {
     $dns = 'mysql:dbname=website; host=localhost; charset=utf8';
-    $user = 'root';
-    $password = '';
+    $user = 'client';
+    $password = 'S|bt4ac20p&d&s9';
     $options = [ // remplace le setAttribute
             PDO::ATTR_ERRMODE => PDO:: ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
