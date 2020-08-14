@@ -14,8 +14,8 @@ $sqlForm = "SELECT id,name, url, cat_id, note, description FROM sites WHERE id =
 $result = $dbh->prepare($sqlForm);
 $result->bindValue('id',$_GET['id'], PDO::PARAM_INT);
 $result->execute();
-$films = $result->fetchAll();
-//var_dump($films);
+$restos = $result->fetchAll();
+//var_dump($restos);
 ?>
 <main class="container">
     <section id="insert">
@@ -23,21 +23,21 @@ $films = $result->fetchAll();
         <div class="row">
             <div class="col-md-12">
                 <form action="tools/updatesite.php" method="post">
-                    <?php foreach ($films as $film) : ?>
+                    <?php foreach ($restos as $resto) : ?>
                     <div class="form-group">
                         <label for="name">Nom du restaurant</label>
-                        <input type="text" id="name" name="name" placeholder="Nom du site" required class="form-control" value="<?= $film->name ?>">
+                        <input type="text" id="name" name="name" placeholder="Nom du site" required class="form-control" value="<?= $resto->name ?>">
                     </div>
                     <div class="form-group">
                         <label for="url">URL du restaurant</label>
-                        <input type="url" id="url" name="url" placeholder="URL du site" required class="form-control" value="<?= $film->url ?>">
+                        <input type="url" id="url" name="url" placeholder="URL du site" required class="form-control" value="<?= $resto->url ?>">
                     </div>
                     <div class="form-group">
                         <label for="category">Catégorie du restaurant</label>
                         <select id="category" name="category" required class="form-control">
                             <option value="" disabled selected>Sélectionnez...</option>
                             <?php foreach ($categories as $category) {
-                                if ($category->id === $film->cat_id) {
+                                if ($category->id === $resto->cat_id) {
                                     ?><option value="<?= $category->id ?>" selected><?= $category->category ?></option> <?php
                                 }
                                 else {
@@ -51,7 +51,7 @@ $films = $result->fetchAll();
                     <select id="note" name="note" required class="form-control">
                         <option value="" disabled selected>Sélectionnez...</option>
                         <?php for($i = 1; $i <= 5; $i++) {
-                            if ($i == $film->note) {
+                            if ($i == $resto->note) {
                                 ?><option value="<?= $i ?>" selected><?= $i ?></option> <?php
                             }
                             else {
@@ -61,10 +61,10 @@ $films = $result->fetchAll();
                     </select>
                     <div class="form-group">
                         <label for="description">Description du site</label>
-                        <textarea name="description" id="description" rows="4" class="form-control" required> <?php echo $film->description ?></textarea>
+                        <textarea name="description" id="description" rows="4" class="form-control" required> <?php echo $resto->description ?></textarea>
                     </div>
 <!--                    Champ caché avec l'id du site-->
-                        <input type="hidden" name="id" value="<?= $film->id ?>"> <!-- Plus sécuriser comme ça si erreur vient directement de la requête -->
+                        <input type="hidden" name="id" value="<?= $resto->id ?>"> <!-- Plus sécuriser comme ça si erreur vient directement de la requête -->
                     <input type="submit" class="btn btn-primary">
                     <?php endforeach;?>
                 </form>

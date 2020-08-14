@@ -45,7 +45,7 @@ $websites = $result->fetchAll()
                     <div class="col-12 col-lg-4">
                         <div class="card" style="background-image: url('image/<?= $website->name ?>.jpg')">
 
-                            <h1 class='resto'><?= $website->name ?></h1>
+                            <h1 class='resto'id=<?= $website->id ?>><?= $website->name ?></h1>
                             <h3 class='type'><?= $website->category ?></h3><br>
                             <h4><?= stars($website->note) ?></h4>
                             <h5><a href="avis.php?search=<?= $website->name ?>">avis d'utilisateur</a></h5>
