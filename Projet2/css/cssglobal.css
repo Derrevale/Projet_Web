@@ -52,8 +52,8 @@ h3 #lisres.display-4.my-3{
 
 
 #listing .card:hover{
-    -webkit-transform: scale(1.4) rotate(360deg);
-    transform:scale(1.4) rotate(360deg);
+    -webkit-transform: scale(1.4);
+    transform:scale(1.4);
     background-repeat: no-repeat;
     position: center;
     z-index: 1;
