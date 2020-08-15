@@ -29,8 +29,9 @@ body{
     height:100%;
 }
 
-#footer{
-    background-color: #F5F5DC;
+#pied{
+    background-color: #E6DCD9;
+    max-width:3500px;
 }
 
 #nom{
