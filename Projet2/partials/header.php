@@ -38,7 +38,7 @@
                     <a class="nav-link" id="clair" onclick="modeJour('#E6DCD9')"> Mode Jour </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  id="nuit"  onclick="modeNuit('#474747')"> Mode Nuit </a>
+                    <a class="nav-link"  id="nuit"  onclick="modeNuit('#252525')"> Mode Nuit </a>
                 </li>
             </ul>
 
