@@ -41,7 +41,7 @@ $table=$resultat->fetchAll();
     var variableRecuperee = <?php echo json_encode($table); ?>;
 </script>
 
-    <script type="text/javascript" src="js/fonctions.js"></script>
+    <script type="text/javascript" src="js/modeNuit.js"></script>
 
     <link href="css/cssglobal.css" rel="stylesheet">
 
