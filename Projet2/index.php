@@ -4,12 +4,15 @@ require 'partials/header.php';
 require 'tools/DB.php';
 require 'tools/tools.php';
 $dbh = connect();
+
+
 if (!isset($_GET['search'])) {
     $sql = "SELECT s.id, s.name,s.url, s.note, c.category
     FROM sites s 
     LEFT JOIN category c on s.cat_id = c.id
     order by name";
     $result = $dbh->prepare($sql);
+    $resultat = $dbh->prepare($sql);
 }
 else {
     $sql = "SELECT s.id, s.name,s.url, s.note, c.category
@@ -17,12 +20,27 @@ else {
     LEFT JOIN category c on s.cat_id = c.id
     WHERE s.name LIKE :search
     order by name";
+
+    $sql1 = "SELECT s.id, s.name,s.url, s.note, c.category
+    FROM sites s 
+    LEFT JOIN category c on s.cat_id = c.id
+    order by name";
     $result = $dbh->prepare($sql);
+    $resultat = $dbh->prepare($sql1);
     $result->bindValue('search', '%'.$_GET['search']. '%', PDO::PARAM_STR);
+
 }
+
 $result->execute();
-$websites = $result->fetchAll()
+$websites = $result->fetchAll();
+$resultat->execute();
+$table=$resultat->fetchAll();
+
 ?>
+<script>
+    var variableRecuperee = <?php echo json_encode($table); ?>;
+</script>
+
     <script type="text/javascript" src="js/fonctions.js"></script>
 
     <link href="css/cssglobal.css" rel="stylesheet">
@@ -32,7 +50,10 @@ $websites = $result->fetchAll()
         <div class="row">
             <div class="col-12 col-lg-4">
                 <p id="nom">Resto-rank</p>
-
+                <form class="form-inline my-2 my-lg-0" action="?" method="get">
+                    <input hidden class="form-control mr-sm-2" type="search" placeholder="Search"id="Search1" aria-label="Search" name="search" <?php if (isset($_GET['search'])) echo  'value='.$_GET['search'] ?> >
+                    <button onclick="aleatoire(variableRecuperee)"type="submit">Au hasard </button>
+                </form>
             </div>
         </div>
         <section id="listing">

@@ -1,4 +1,5 @@
 <!-- Derreumaux Valentin -  20/04/2020  11:55 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +47,6 @@
 
                 <input class="form-control mr-sm-2" type="search" placeholder="Search"id="Search" aria-label="Search" name="search" <?php if (isset($_GET['search'])) echo  'value='.$_GET['search'] ?> >
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" onclick="aleatoire()">Au hasard </button>
             </form>
 
 
