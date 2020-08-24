@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/icofont.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/Bonus.js"></script>
+    <script src="js/modeNuit.js"></script>
 </head>
 <body>
 <header>
