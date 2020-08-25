@@ -38,7 +38,7 @@ require 'tools/tools.php';
     </div>
     <div class="col-md-6 offset-md-3">
         <h3 align="center" class="my-3">Inscription</h3>
-        <form action="/enregistrement.php?action=enregistrement" method="post">
+        <form action="enregistrement.php?action=enregistrement" method="post">
             <button class="btn btn-primary form-control btnlog" type="submit" >Enregistrez-vous</button>
 
 
