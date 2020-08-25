@@ -3,7 +3,7 @@
 /*possibiliter de modifier la db directement depuis le site en tant que admin
 (objectif lors de la connection si admin direction vers celui si et non le user classique
 */
-require 'partials/header_admin.php';
+require 'partials/header.php';
 require 'tools/DB.php';
 require 'tools/tools.php';
 $dbh = connect();
@@ -14,7 +14,7 @@ if (isset($_GET['action'])){
         require 'forms/updatesite.php';
     }
 } else {
-    require 'partials/table_admin.php';
+    require 'partials/index.php';
 }
 
 require 'partials/footer.php';
