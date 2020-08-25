@@ -27,7 +27,7 @@ $websites = $result->fetchAll()
    
     <main class="container">
         <section id="listing">
-            <h3 id="avis" class="display-4 my-3">Avis des utilisateurs</h3>
+            <h3 style="color:#714F4F" class="display-4 my-3">Avis des utilisateurs</h3>
             <div class="row">
                 <div class=" col-md-12">
                     <?php if (count($websites)) : ?>
