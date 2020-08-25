@@ -24,7 +24,7 @@ $categories = $result->fetchAll();
                     </div>
                     <div class="form-group">
                         <label for="nom">Nom de famille</label>
-                        <input id="nom" name="nom" placeholder="Entrez votre nom de famille" required class="form-control">
+                        <input id="nomfam" name="nom" placeholder="Entrez votre nom de famille" required class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="pseudo">Votre pseudo</label>
