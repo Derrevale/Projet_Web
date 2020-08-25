@@ -28,7 +28,10 @@ $password = false;
 if ($connect) {
 
     if ($typeOfUser) {
-        if ($password) header('location:../admin.php');
+        if ($password){
+            header('location:../admin.php');
+            $_SESSION['typeofuser'] = $user->typeOfUser;
+            $_SESSION['login'] = $user->pseudo;}
         else header('location:../login.php');
     } else {
         if ($password){ header('location:../insertavis.php?action=insertavis');
