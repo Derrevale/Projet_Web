@@ -31,9 +31,12 @@ body{
 }
 
 #pied{
+    clear:both;
     background-color: #E6DCD9;
     max-width:3500px;
+
 }
+
 
 
 #nom{
