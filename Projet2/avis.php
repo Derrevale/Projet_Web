@@ -1,6 +1,6 @@
 <?php
 //Page principale , acces utilisateur normaux si connection effective
-require 'partials/header_avis.php';
+require 'partials/header.php';
 require 'tools/DB.php';
 require 'tools/tools.php';
 $dbh = connect();
