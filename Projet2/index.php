@@ -52,7 +52,7 @@ $table=$resultat->fetchAll();
                 <p id="nom">Resto-rank</p>
                 <form class="form-inline my-2 my-lg-0" action="?" method="get">
                     <input hidden class="form-control mr-sm-2" type="search" placeholder="Search"id="Search1" aria-label="Search" name="search" <?php if (isset($_GET['search'])) echo  'value='.$_GET['search'] ?> >
-                    <button onclick="aleatoire(variableRecuperee)"type="submit">Au hasard </button>
+                    <button id="boutAlea" onclick="aleatoire(variableRecuperee)"type="submit">Au hasard </button>
                 </form>
             </div>
         </div>
