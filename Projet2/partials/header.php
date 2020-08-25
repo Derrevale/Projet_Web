@@ -11,8 +11,24 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/Bonus.js"></script>
     <script src="js/modeNuit.js"></script>
+    <script type="text/javascript">
+    
+        function setColor() {
+            if(sessionStorage.mode=="nuit"){
+                document.body.style.background = "#252525";
+                for(let i in ima){
+                    ima[i].style.filter='brightness(0.7)';
+                }
+            }else{
+                document.body.style.background = "#E6DCD9";
+                for(let i in ima){
+                    ima[i].style.filter='brightness(1)';
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="setColor()">
 <header>
     <!--    NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navTop">
