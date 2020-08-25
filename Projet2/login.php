@@ -29,7 +29,7 @@ require 'tools/tools.php';
                     <label for="password">Mot de passe</label>
                     <input type="password" id="password" name="password" required class="form-control">
                 </div>
-                <button class="btn btn-primary form-control" type="submit" >Connection</button>
+                <button class="btn btn-primary form-control btnlog" type="submit" >Connection</button>
 
 
             </form>
@@ -39,7 +39,7 @@ require 'tools/tools.php';
     <div class="col-md-6 offset-md-3">
         <h3 align="center" class="my-3">Inscription</h3>
         <form action="/enregistrement.php?action=enregistrement" method="post">
-            <button class="btn btn-primary form-control" type="submit" >Enregistrez-vous</button>
+            <button class="btn btn-primary form-control btnlog" type="submit" >Enregistrez-vous</button>
 
 
         </form>
