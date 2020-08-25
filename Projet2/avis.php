@@ -27,14 +27,14 @@ $websites = $result->fetchAll()
    
     <main class="container">
         <section id="listing">
-            <h3 class="display-4 my-3">Avis des utilisateurs</h3>
+            <h3 id="avis" class="display-4 my-3">Avis des utilisateurs</h3>
             <div class="row">
-                <div class="col-md-12">
+                <div class=" col-md-12">
                     <?php if (count($websites)) : ?>
 
                         <table class="table table-hover">
                             <thead>
-                            <tr>
+                            <tr style="color:#714F4F">
                                 <th>Nom du restaurant</th>
                                 <th>Nom d'utilisateur</th>
                                 <th>avis</th>
@@ -44,7 +44,7 @@ $websites = $result->fetchAll()
                             </thead>
                             <tbody>
                             <?php foreach ($websites as $website) : ?>
-                                <tr>
+                                <tr style="color:#714F4F">
                                     <td><?= $website->name_rest ?></td>
                                     <td><?= $website->pseudo_user ?></td>
                                     <td><?= $website->avis ?></td>
