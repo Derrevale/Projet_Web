@@ -13,5 +13,5 @@ $result->bindValue('login', $_POST['login'], PDO::PARAM_STR);
 $result->bindValue('password', $_POST['password'], PDO::PARAM_STR);
 $result->execute();
 
-//redirection vers admin.php
+//redirection vers index.php
 header('location:../index.php');
