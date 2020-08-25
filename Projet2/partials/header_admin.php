@@ -44,5 +44,13 @@ if(empty($_SESSION['typeofuser']))
 
             </ul>
         </div>
+        <form class="form-inline my-2 my-lg-0" action="?" method="get">
+
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="<?php
+
+            session_destroy();
+            unset($_SESSION);
+            ?>">Déconnextion</button>
+        </form>
     </nav>
 </header>
