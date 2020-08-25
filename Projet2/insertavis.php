@@ -3,7 +3,8 @@
 (objectif lors de la connection si admin direction vers celui si et non le user classique
 */
 session_start();
-require 'partials/header_avis.php';
+require 'partials/header.php';
+
 require 'tools/DB.php';
 require 'tools/tools.php';
 $dbh = connect();
