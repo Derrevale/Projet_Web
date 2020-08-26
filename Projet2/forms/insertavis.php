@@ -7,16 +7,16 @@ $name = $result->fetchAll();
 ?>
 <main class="container">
     <section id="insert">
-        <h2 class="display-4 my-3">Insertion d'un avis </h2>
+        <h2 style="color:#714F4F" class="display-4 my-3">Insertion d'un avis </h2>
         <div class="row">
             <div class="col-md-12">
                 <form action="tools/insertavis.php" method="post">
                     <div class="form-group">
-                        <label for="pseudo">Utilisateur</label>
-                        <input type="text" id="pseudo" name="pseudo"  readonly value="<?= $_SESSION['login'] ?>">
+                        <label style="color:#714F4F" for="pseudo">Utilisateur</label>
+                        <input  type="text" id="pseudo" name="pseudo"  readonly value="<?= $_SESSION['login'] ?>">
                     </div>
                     <div class="form-group">
-                        <label for="name">Nom du restaurant</label>
+                        <label style="color:#714F4F" for="name">Nom du restaurant</label>
                         <select id="name" name="name" required class="form-control">
                             <option value="" disabled selected>Sélectionnez...</option>
                             <?php foreach ($name as $name) : ?>
@@ -25,7 +25,7 @@ $name = $result->fetchAll();
                         </select>
                     </div>
 
-                    <label for="note">Note du restaurant</label>
+                    <label style="color:#714F4F" for="note">Note du restaurant</label>
                     <select id="note" name="note" required class="form-control">
                         <option value="" disabled selected>Sélectionnez...</option>
                         <?php for($i = 1; $i <= 5; $i++) : ?>
@@ -40,10 +40,10 @@ $name = $result->fetchAll();
                     </select>
 
                     <div class="form-group">
-                        <label for="avis">Description du restaurant</label>
+                        <label style="color:#714F4F" for="avis">Description du restaurant</label>
                         <textarea name="avis" id="avis" rows="4" class="form-control" required></textarea>
                     </div>
-                    <input type="submit" class="btn btn-primary">
+                    <input type="submit" class="btn btn-primary btnlog">
                 </form>
             </div>
         </div>
