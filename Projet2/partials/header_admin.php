@@ -6,14 +6,14 @@ session_start();
 if(empty($_SESSION['login']))
 {
 // Si inexistante ou nulle, on redirige vers le formulaire de login
-header('Location:../web/index.php');
+header('Location:../index.php');
 exit();
 }
 
 if(empty($_SESSION['typeofuser']))
 {
 // Si inexistante ou nulle, on redirige vers le formulaire de login
-    header('Location:../web/index.php');
+    header('Location:../index.php');
     exit();
 }
 ?>
