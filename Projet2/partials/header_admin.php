@@ -6,14 +6,14 @@ session_start();
 if(empty($_SESSION['login']))
 {
 // Si inexistante ou nulle, on redirige vers le formulaire de login
-header('Location:../web/index.php');
+header('Location:../index.php');
 exit();
 }
 
 if(empty($_SESSION['typeofuser']))
 {
 // Si inexistante ou nulle, on redirige vers le formulaire de login
-    header('Location:../web/index.php');
+    header('Location:../index.php');
     exit();
 }
 ?>
@@ -44,7 +44,7 @@ if(empty($_SESSION['typeofuser']))
 
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0" action="/web/logout.php">
+        <form class="form-inline my-2 my-lg-0" action="/logout.php">
 
             <button class="btn btn-outline-success my-2 my-sm-0" >Déconnextion</button>
 
