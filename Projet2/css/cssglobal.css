@@ -5,14 +5,14 @@
 .card h3{
     color:#EC7063;
 }
-
-a:hover{
+h5 a:hover{
     color:#EC7063;
+    font-weight: bold;
 }
 
 h5 a{
-    color:#000080;
-    font-weight:bold;
+    color:#EC7063;
+    font-weight: revert;
 }
 
 .card{
