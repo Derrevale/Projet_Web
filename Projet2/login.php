@@ -12,7 +12,7 @@ require 'tools/tools.php';
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cssglobal.css">
-    <script type="text/javascript" src="js/fonctions.js"></script>
+    <script type="text/javascript" <script src="js/modeNuit.js"></script>
 </head>
 
 <body>
