@@ -15,9 +15,9 @@ require 'tools/tools.php';
                  </div>
             </div>
         </div>
-    <div class="row">
-        <div class="col-12 col-lg-4">
-            <div class="text-center">
+    <div class="row mx-auto d-block text-center">
+        <div class>
+            <div>
                  <img class="img-fluid" src="image/bo.jpg" alt="b">
             </div>
         </div>
