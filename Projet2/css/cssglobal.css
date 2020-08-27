@@ -58,13 +58,20 @@ h3 #lisres.display-4.my-3{
 
 
 #listing .card:hover{
-    -webkit-transform: scale(1.4);
-    transform:scale(1.4);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
     background-repeat: no-repeat;
     position: center;
     z-index: 1;
 
+
 }
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
 
 #boutAlea{
     float:left;
