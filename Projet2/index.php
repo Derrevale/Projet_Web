@@ -69,7 +69,7 @@ $table=$resultat->fetchAll();
                             <h1 class='resto'id=<?= $website->id ?>><?= $website->name ?></h1>
                             <h3 class='type'><?= $website->category ?></h3><br>
                             <h4><?= stars($website->note) ?></h4>
-                            <h5><a href="avis.php?search=<?= $website->name ?>">avis d'utilisateur</a></h5>
+                            <h5><a href="avis.php?search=<?= $website->name ?>">Avis d'utilisateur</a></h5>
                             <h5><a href="<?= $website->url ?>">Voir le site</a></h5>
                         </div>
                     </div>
