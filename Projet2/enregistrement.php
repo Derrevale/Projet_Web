@@ -20,6 +20,6 @@ if (isset($_GET['action'])){
 require 'partials/footer.php';
 ?>
 
-<script type="text/javascript" src="js/fonctions.js"></script>
+<script type="text/javascript" <script src="js/modeNuit.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link href="css/cssglobal.css" rel="stylesheet">
