@@ -16,9 +16,9 @@ require 'tools/tools.php';
             </div>
         </div>
     <div class="row">
-        <div class="col">
+        <div class="col-12 col-lg-4">
             <div class="text-center">
-                 <img src="image/bo.jpg" alt="b">
+                 <img class="img-fluid" src="image/bo.jpg" alt="b">
             </div>
         </div>
     </div>
