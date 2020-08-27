@@ -23,7 +23,7 @@ else {
 $result->execute();
 $websites = $result->fetchAll()
 ?>
-    <script type="text/javascript" src="js/fonctions.js"></script>
+    <script type="text/javascript" <script src="js/modeNuit.js"></script>
    
     <main class="container">
         <section id="listing">
